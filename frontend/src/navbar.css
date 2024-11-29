@@ -1,0 +1,66 @@
+/* Navbar Styling */
+.custom-navbar {
+  background: #3C1053FF; /* Solid Purple */
+  padding: 10px 15px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  border: none;
+  color: #FFFFFF;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFFFFF; /* White icon */
+}
+
+.navbar-nav {
+  margin: 0 auto; /* Center the navbar links in the middle */
+}
+
+.nav-item .nav-link {
+  color: #FFFFFF;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: #DF6589FF; /* Rose Pink hover */
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #DF6589FF; /* Rose Pink */
+  border: none;
+  color: #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #C2446B; /* Darker Rose Pink */
+}
+
+/* Centering dropdown items in mobile view */
+.navbar-collapse {
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center; /* Center-align text in mobile view */
+  }
+
+  .nav-item {
+    margin-bottom: 10px; /* Add space between links in mobile view */
+  }
+}

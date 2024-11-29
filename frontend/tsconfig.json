@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": false, // Set to false to catch type errors in dependencies
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "typeRoots": ["node_modules/@types"], // Explicitly include types folder
+    "types": ["react", "react-dom", "react-router-dom"] // Add type definitions
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

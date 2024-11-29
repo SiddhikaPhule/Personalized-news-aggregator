@@ -1,0 +1,75 @@
+/* styles.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #DF6589FF, #3C1053FF);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navigate-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3C1053FF;
+  background-color: #DF6589FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navigate-button:hover {
+  background-color: #3C1053FF;
+  color: #DF6589FF;
+  transform: scale(1.1);
+}
+
+.navigate-button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Styling for the home page container */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styling for the Start Reading News button */
+.navigate-button {
+  background-color: #3C1053FF; /* Purple background */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  padding: 15px 30px; /* Add padding to the button */
+  font-size: 18px; /* Set the font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  font-weight: bold; /* Make text bold */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.navigate-button:hover {
+  transform: translateY(-5px); /* Makes the button pop up a bit */
+  background-color: #5F1364FF; /* Lighter purple shade when hovering */
+}
+
+.navigate-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.navigate-button:active {
+  transform: translateY(2px); /* Adds a slight downward effect when clicking */
+}

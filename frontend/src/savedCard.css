@@ -1,0 +1,95 @@
+/* Container for the saved cards */
+.saved-cards-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title of the saved cards section */
+  .saved-cards-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* The container for all saved cards */
+  .saved-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Style for each saved article card */
+  .saved-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .saved-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Header for each card containing the title and image */
+  .saved-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .saved-card-header h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex: 1;
+    margin: 0;
+  }
+  
+  .saved-card-header img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+  
+  /* Truncated description (two lines) */
+  .saved-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Button to unsave the article */
+  .saved-card button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .saved-card button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* No saved articles message */
+  .saved-cards-container p {
+    text-align: center;
+    color: #777;
+    font-size: 1.2rem;
+  }
+  button {
+    z-index: 1;
+  }

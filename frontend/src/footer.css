@@ -1,0 +1,101 @@
+/* Footer Styles */
+.footer {
+  background-color: #3C1053FF; /* Purple background */
+  color: #FFFFFF; /* White text color */
+  padding: 20px 10px;
+}
+
+.footer .container {
+  display: flex; /* Use Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space between sections */
+  align-items: center; /* Align vertically in the center */
+  text-align: left; /* Align content to the left */
+  max-width: 1200px; /* Limit footer width */
+  margin: 0 auto; /* Center on larger screens */
+}
+
+/* Footer title */
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Footer Links */
+.footer-links,
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links li a,
+.social-links li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover,
+.social-links li a:hover {
+  color: #DF6589FF; /* Rose Pink hover */
+}
+
+/* Social Media Icons */
+.social-links i,
+.social-links svg {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover svg {
+  color: #DF6589FF; /* Hover color for icons */
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .footer .container {
+    flex-direction: row; /* Horizontal layout */
+  }
+
+  .footer .col-md-4 {
+    flex: 1; /* Equal spacing */
+    padding: 10px; /* Add padding to sections */
+  }
+
+  .social-links {
+    display: flex; /* Horizontal layout for icons */
+    justify-content: flex-start; /* Align icons to the left */
+  }
+
+  .social-links li {
+    margin-right: 15px; /* Space between icons */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .footer .container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center-align content */
+  }
+
+  .social-links {
+    justify-content: center; /* Center icons on mobile */
+  }
+}
+.footer-credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+.footer-credit strong {
+  color: #DF6589FF; /* Rose Pink for highlighting names */
+}
+
